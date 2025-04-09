@@ -10,6 +10,9 @@ CREATE TABLE employees (
     id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     typeID INT,
+    annualSalary NUMERIC NULL,
+    hourlyRate NUMERIC NULL,
+    hoursWorked NUMERIC NULL,
     FOREIGN KEY (typeID) REFERENCES employee_types(id)
 );
 
